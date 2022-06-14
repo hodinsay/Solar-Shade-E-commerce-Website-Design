@@ -1,0 +1,600 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Press+Start+2P&family=Raleway&display=swap');
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+body{
+     font-family: 'Raleway', sans-serif;
+}
+
+/******************************************
+/* LAYOUT (index.html)
+/*******************************************/
+
+/* Header */
+
+.nav-menu {
+     display: flex;
+     align-items: center;
+     padding: 20px;
+     justify-content: space-between;
+}
+
+nav{
+     flex: 1;
+     text-align: right;
+}
+
+nav ul{
+     display: inline-block;
+}
+
+nav ul li{
+     display: inline-block;
+     margin-right: 20px;
+}
+
+.heading{
+     max-width: 100%;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+     background-color: whitesmoke;
+}
+
+.nav-brand{
+     cursor: pointer;
+     font-family: 'Dancing Script', sans-serif;
+}
+
+.menu-bars{
+     width: 28px;
+     margin-left: 20px;
+     display: none;
+}
+
+/* #one */
+
+#one{
+     background-image: url(../img/shadepic3.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 900px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding-left: 3rem;
+     color: white;
+}
+
+#one > h1{
+     font-size: 35px;
+     font-family: 'Press Start 2P', sans-serif;
+}
+
+#one > p{
+     font-size: 20px;
+     padding-bottom: 2rem;
+}
+
+#one > p > span{
+     font-family: 'Dancing Script', sans-serif;
+     font-size: 25px;
+     font-weight: bold;
+     color: black;
+}
+
+#one > a > button{
+     display: inline-block;
+     background-color: black;
+     color: white;
+     padding: 8px 30px;
+     margin: 30px 0;
+     border-radius: 30px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#one > a > button:hover{
+     cursor: pointer;
+     background-color: darkred;
+     transform: 0.3s;
+}
+
+/* #two */
+
+#two{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     max-width: 1080px;
+     margin: 100px auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+
+#two > div {
+     flex-basis: 25%;
+     height: 400px; 
+     min-width: 300px;
+}
+
+#two > .model-one{
+     background-image: url(../img/model4.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#two > .model-two{
+     background-image: url(../img/model1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#two > .model-three{
+     background-image: url(../img/model3.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* #three */
+
+#three{
+     max-width: 1080px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+
+.row{
+     display: flex;
+     align-items: center;
+     flex-wrap: center;
+     justify-content: space-around;
+}
+
+.col-1{
+     flex-basis: 25%;
+     padding: 10px;
+     min-width: 200px;
+     margin-bottom: 50px;
+     transition: transform 0.5s;
+}
+
+.col-1 > img{
+     width: 100%;
+}
+
+.title{
+     text-align: center;
+     margin: 25px auto 70px;
+     position: relative;
+     line-height: 60px;
+     color: #555;
+}
+
+.title::after{
+     content: '';
+     background: #ff523b;
+     width: 80px;
+     height: 5px;
+     border-radius: 5px;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+}
+
+h4{
+     color: #555;
+     font-weight: normal;
+}
+
+.col-1 > p{
+     font-size: 14px;
+}
+
+.rating .fas{
+     color: #ff523b;
+}
+
+.col-1:hover{
+     transform: translateY(-5px);
+     cursor: pointer;
+} 
+
+/* Four */
+
+#four{
+     max-width: 1080px;
+     margin: 100px auto;
+     padding-left: 25px;
+     padding-right: 25px; 
+}
+
+.row-2{
+     display: flex;
+     align-items: center;
+     flex-wrap: center;
+     justify-content: space-around; 
+}
+
+.col-2{
+     width: 160px;
+}
+
+.col-2 > img{
+     width: 100%;
+     cursor: pointer;
+     filter: grayscale(100%);
+}
+
+.col-2 > img:hover{
+     filter: grayscale(0);
+}
+
+/* #footer */
+
+.container{
+     margin-top: 150px;
+     width: 100%;
+     padding: 100px 15%;
+     background: #333;
+     color: #efefef;
+     display: flex;
+}
+
+.container div{
+     text-align: center;
+}
+
+.footer-col-2{
+     flex-grow: 2;
+}
+
+.container div h3{
+     font-weight: 300;
+     margin-bottom: 30px;
+     letter-spacing: 1px;
+}
+
+.footer-col-1 a{
+     display: block;
+     color: #efefef;
+     margin-bottom: 10px;
+}
+
+form input{
+     width: 400px;
+     height: 45px;
+     border-radius: 4px;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 40px;
+     outline: none;
+     border: none;
+}
+
+form button{
+     background: transparent;
+     border: 2px solid #fff;
+     color: #fff;
+     border-radius: 30px;
+     padding: 10px 30px;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+.social-icons{
+     margin-top: 30px;
+}
+
+.social-icons i{
+     font-size: 22px;
+     margin: 10px;
+     cursor: pointer;
+}
+
+/******************************************
+/* LAYOUT (products.html)
+/*******************************************/
+
+select{
+     margin-left: 10px;
+     margin-bottom: 25px;
+     cursor: pointer;
+}
+
+.page-btn{
+     margin-left: 14%;
+}
+
+.page-btn span{
+     display: inline-block;
+     border: 1px solid #ff523b;
+     margin-left: 10px;
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     line-height: 40px;
+     cursor: pointer;
+}
+
+.page-btn span:hover{
+     background: #ff523b;
+     color: white;
+}
+
+/******************************************
+/* LAYOUT (product-details.html)
+/*******************************************/
+
+.container-3{
+     max-width: 1080px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+
+.small-container{
+     max-width: 1080px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+
+.row-3{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+
+.col-3{
+     flex-basis: 50%;
+     min-width: 300px;
+     margin-bottom: 30px;
+}
+
+.btn{
+     display: inline-block;
+     background-color: black;
+     color: white;
+     padding: 8px 30px;
+     margin: 30px 0;
+     border-radius: 30px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn:hover{
+     cursor: pointer;
+     background-color: #ff523b;
+     transform: 0.3s;
+}
+
+.single-product{
+     margin-top: 70px;
+}
+
+.single-product .col-3 img{
+     padding: 0;
+}
+
+.single-product .col-3 {
+     padding: 20px;
+}
+
+.single-product h4{
+     margin: 20px 0;
+     font-size: 22px;
+     font-weight: bold;
+}
+
+.single-product select{
+     display: block;
+     padding-left: 10px;
+     margin-top: 20px;
+}
+
+.single-product input{
+     width: 50px;
+     height: 40px;
+     padding-left: 10px;
+     font-size: 20px;
+     margin-right: 10px;
+     border: 1px solid #ff523b;
+}
+
+input:focus{
+     outline: none;
+}
+
+.single-product .fas{
+     color: #ff523b;
+     padding-left: 10px;
+}
+
+.small-img-row{
+     display: flex;
+     justify-content: space-between;
+}
+
+.small-img-col{
+     flex-basis: 24%;
+     cursor: pointer;
+}
+
+/******************************************
+/* LAYOUT (cart.html)
+/*******************************************/
+
+.small-container-2{
+     max-width: 1080px;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+}
+
+.cart-page{
+     margin: 80px auto;
+}
+
+table{
+     width: 100%;
+     border-collapse: collapse;
+}
+
+.cart-info{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+th{
+     text-align: left;
+     padding: 5px;
+     color: #fff;
+     background: #ff523b;
+     font-weight: normal;
+}
+
+td{
+     padding: 10px 5px;
+}
+
+td input{
+     width: 40px;
+     height: 30px;
+     padding: 5px;
+}
+
+td a {
+     color: #ff523b;
+     font-size: 12px;
+}
+
+td img{
+     width: 80px;
+     height: 80px;
+     margin-right: 10px;
+}
+
+.total-price{
+     display: flex;
+     justify-content: flex-end;
+}
+
+.total-price table {
+     border-top: 3px solid #ff523b;
+     width: 100%;
+     max-width: 400px;
+}
+
+td:last-child{
+     text-align: right;
+}
+
+th:last-child{
+     text-align: right;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (max-width: 800px){
+     nav ul{
+          position: absolute;
+          top:70px;
+          left: 0;
+          background: #333;
+          width: 100%;
+          display: none;
+     }
+
+     nav ul.active{
+          display: block;
+     }
+     
+     nav ul li{
+          display: block;
+          margin-right: 50px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          text-align: center;
+     }
+     nav ul li a{
+          color: white;
+     }
+     .menu-bars{
+          display: block;
+          cursor: pointer;
+     }
+     #two{
+          margin: 100px 0;
+     }
+     #two > .model-one{
+          margin: 100px 0;
+     }
+     #two > .model-two{
+          margin-left: 0;
+     }
+     #two > .model-three{
+          margin-right: 0;
+     }
+     .row{
+          display: block;
+     }
+     .container{
+          display: block;
+     }
+     .footer-col-2{
+          margin: 100px 0;
+     }
+     .footer-col-2 > form > input{
+          width: 100%;
+     }
+     .page-btn{
+          margin-left: 0;
+          text-align: center;
+     }
+     .cart-info p{
+          display: none;
+     }
+}

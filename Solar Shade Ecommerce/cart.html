@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - Solar Shade</title>
+
+    <!-- external CSS link -->
+	<script src="https://kit.fontawesome.com/cd1bf23aec.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Heading -->
+	<header class="heading">
+		<div class="nav-menu">
+            <a href="index.html"><h2 class="nav-brand">Solar Shade</h2></a>
+			<nav>
+				<ul class="nav-item">
+					<li class="nav-link">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="nav-link">
+						<a href="products.html">Products</a>
+					</li>
+					<li class="nav-link">							
+                        <a href="#">About</a>
+					</li>
+					<li class="nav-link">
+						<a href="#">Contact</a>
+					</li>
+					<li class="nav-link">
+						<a href="#">Login</a>
+					</li>
+					<li class="nav-link">
+						<a href="cart.html">Cart</a>
+					</li>
+				<!-- <li class="nav-link">
+						<span class="icon">
+							<i class="fas fa-search"></i>
+						</span>
+						<input type="text" placeholder="Search here">
+					</li> -->
+				</ul>
+			</nav>
+            <!-- <i class="fas fa-shopping-cart"></i> -->
+			<div class="menu-bars">
+				<i class="fas fa-bars" onclick="menutoggle()"></i>
+			</div>
+		</div>
+	</header>
+
+    <div class="small-container-2 cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/solarshade1.jpg" alt="magnum">
+                        <div>
+                            <p>Sleezy v4 ~Magnum~</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/solarshade8.jpg" alt="blue">
+                        <div>
+                            <p>Sleezy v1 ~Blue Steel~</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/solarshade6.jpg" alt="letigre">
+                        <div>
+                            <p>Sleezy v2 ~Le Tigre~</p>
+                            <small>Price: $50.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$22.50</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td>$172.50</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <!-- #footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="footer-col-1">
+				<h3>USEFUL LINKS</h3>
+				<a href="index.html">Home</a>
+				<a href="products.html">Products</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<a href="#">Login</a>
+				<a href="#">Return Policy</a>
+			</div>
+			<div class="footer-col-2">
+				<h3>NEWSLETTER</h3>
+				<form>
+					<input type="email" placeholder="Your email address" required>
+					<br>
+					<button type="submit">SUBSCRIBE NOW</button>
+				</form>
+			</div>
+			<div class="footer-col-3">
+				<h3>CONTACT</h3>
+				<p> 415-333-3333 <br />
+					San Francisco, CA</p>
+				<div class="social-icons">
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-twitter"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
