@@ -1,6 +1,6 @@
-# Solar Shade - Ecommerce Site Template
+# Solar Shade - E-commerce Website Design
 
-This is a sample Ecommerce website template. This website template could be utilize to sell sunglasses. 
+This is a sample E-commerce website design. This website design could be utilize as a template layout for selling sunglasses online. 
 
 **Link to project**: 
 
