@@ -2,7 +2,9 @@
 
 This is a sample E-commerce website design. This website design could be utilize as a template layout for selling sunglasses online. 
 
-**Link to project**: 
+**Link to project**:https://codepen.io/hodin81/pen/ZExMzdE
+
+<img width="843" alt="solar3" src="https://user-images.githubusercontent.com/100463706/190225963-c0785d57-e545-4c56-9fc5-d216d2791f34.png">
 
 ## How It's Made:
 
@@ -18,5 +20,5 @@ This is a sample E-commerce website design. This website design could be utilize
 
 Take a look at these couple examples that I have in my own portfolio:
 
-
+-**Kevin Portfolio Website**: https://github.com/hodinsay/Kevin-Portfolio-Website/tree/master
 
